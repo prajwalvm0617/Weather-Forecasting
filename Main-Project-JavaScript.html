@@ -1,0 +1,446 @@
+<html>
+    <head>
+        <title>Weather-Forecasting</title>
+        <link rel="stylesheet" href="Main-Project-JavaScript.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+        <style>
+          /* Extra Large Desktops (1440px and up) */
+/*@media (min-width: 1440px) {
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .sidebar {
+    max-width: 300px;
+  }
+  .main {
+    flex: 1;
+  }
+  body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:100%;
+  }
+}
+
+/* Standard Desktops (1024px - 1440px) */
+/*@media (max-width: 1441px) and (min-width: 1024px) {
+  .temperature h1 {
+    font-size: 2.5rem;
+  }
+  .sidebar {
+    max-width: 250px;
+  }
+  .credits {
+      padding-top:20px;
+  }
+  body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:100%;
+  }
+}
+
+/* Tablets and smaller laptops (768px - 1024px) */
+/*@media (min-width:769px) and (max-width: 1024px) {
+  .wrapper {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .sidebar {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+  }
+  .main {
+    padding: 20px;
+    width:300px;
+    height: 1400px;
+  }
+  .cards {
+      gap: 15px;
+      margin-bottom:80px;
+  }
+  .card2 {
+      flex: 1 1 calc(50% - 15px); 
+      padding: 10px;
+  }
+  .card2 .content p.sun-rise{
+    font-size:26px;
+  }
+  .card2 .content p.air-quality-status{
+    font-size: 10px;
+  }
+  .temperature h1 {
+    font-size: 2rem;
+  }
+  .cards .card2 {
+    flex: 1 1 calc(50% - 10px);
+  }
+  .credits {
+      margin-top:80px;
+  }
+  body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+  }
+}
+
+/* Small Tablets (600px - 768px) */
+/*@media (min-width:601px) and (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .sidebar {
+    flex-direction: column;
+    align-items: center;
+  }
+  .temperature h1 {
+    font-size: 1.8rem;
+  }
+  .options {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .location-text p, #date-time {
+    font-size: 0.9rem;
+  }
+  .main {
+    max-width: 150px;
+  }
+  .cards {
+      gap: 5px;
+  }
+  .card2 {
+      flex: 1 1 calc(50% - 10px); 
+      padding: 5px;
+      font-size:10px;
+  }
+  .card2 .content p.sun-rise{
+    font-size:26px;
+  }
+  .credits {
+      padding-top:40px;
+  }
+  body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:2800px;
+  }
+}
+
+/* Mobile Devices (480px - 600px) */
+/*@media (min-width:481px) and (max-width: 600px) {
+  .wrapper {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .temperature h1 {
+    font-size: 1.5rem;
+  }
+  .main {
+    width: 250px;
+  }
+  .main .cards, .highlights .cards {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .cards {
+      flex-direction: column;
+      gap: 5px;
+  }
+  .card2 {
+    width:250px;
+  }
+  .location, .condition-rain {
+    flex-direction: column;
+    align-items: center;
+  }
+  .credits {
+    font-size: 0.8rem;
+    text-align: center;
+    padding-top:50px;
+  }
+  body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:3000px;
+  }
+}
+
+/* Small Mobile Devices (375px - 480px) */
+/*@media (min-width:376px) and (max-width: 480px) {
+  .wrapper {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .temperature h1 {
+    font-size: 1.3rem;
+  }
+  .condition i, .rain i, .location-icon i {
+    font-size: 0.9rem;
+  }
+  .options button {
+    width: 48%;
+    margin: 5px 1%;
+  }
+  .card2 {
+      padding: 10px;
+      flex: 1 1 calc(50% - 15px);
+      font-size: 0.8rem;
+  }
+  
+  .credits {
+    font-size: 0.7rem;
+    margin-top: 30px;
+  }
+  body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:1400px;
+  }
+}
+
+/* Extra Small Mobile Devices (up to 375px) */
+/*@media (max-width: 375px) {
+  .wrapper {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .temperature h1 {
+    font-size: 1.2rem;
+  }
+  .options button {
+    width: 100%;
+    margin: 5px 0;
+  }
+  .card2 {
+      padding: 3px;
+      flex: 1 1 calc(50% - 15px);
+      font-size: 0.8rem;
+  }
+  .credits {
+    font-size: 0.6rem;
+    padding: 5px;
+    margin-top: 30px;
+  }
+  body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:100%;
+  }
+}*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+:root {
+  --primary-color: #5598fd;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  min-width: 500px;
+  padding: 50px;
+  background: var(--primary-color);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/cd.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image 0.3s ease;
+}
+
+img {
+  width: 100%;
+}
+
+.wrapper {
+  display: flex;
+  width: 1200px;
+  min-width: 900px;
+  border-radius: 20px;
+  height: 1300px;
+}
+
+.sidebar {
+  width: 30%;
+  min-width: 250px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.815);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main {
+  width: 100%;
+  min-width: 400px;
+  padding: 20px 40px;
+  background-color: #f6f6f8;
+  padding-bottom: 90px;
+  position: relative;
+}
+
+.search, .temperature, .condition-rain, .location, .main nav, .cards, .highlights, .credits {
+  display: flex;
+}
+
+.search input, .search button, .credits {
+  font-size: 14px;
+}
+
+.main .cards, .highlights .cards {
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+/* Responsive Styles */
+@media (min-width: 1440px) {
+  .sidebar { max-width: 300px; }
+}
+
+@media (max-width: 1441px) and (min-width: 1024px) {
+  .sidebar { max-width: 250px; }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .wrapper { flex-direction: column; padding: 20px; }
+  .main { padding: 20px; width: 300px; height: 1400px; }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+  .wrapper { flex-direction: column; padding: 20px; }
+  .main { max-width: 150px; }
+}
+
+@media (min-width: 481px) and (max-width: 600px) {
+  .wrapper { flex-direction: column; padding: 20px; }
+  .main { width: 250px; }
+}
+
+@media (min-width: 376px) and (max-width: 480px) {
+  .wrapper { flex-direction: column; padding: 20px; }
+}
+
+@media (max-width: 375px) {
+  .wrapper { flex-direction: column; padding: 20px; }
+}
+        </style>
+    </head>
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+          <div>
+            <form class="search" id="search">
+              <input type="text" id="query" placeholder="Search..." />
+              <button><i class="fas fa-search"></i></button>
+            </form>
+            <div class="weather-icon">
+              <img id="icon" src="icons/sun/4.png" alt="" />
+            </div>
+            <div class="temperature">
+              <h1 id="temp">0</h1>
+              <span class="temp-unit">°C</span>
+            </div>
+            <div class="date-time">
+              <p id="date-time">Monday, 12:00</p>
+            </div>
+            <div class="divider"></div>
+            <div class="condition-rain">
+              <div class="condition">
+                <i class="fas fa-cloud"></i>
+                <p id="condition">condition</p>
+              </div>
+              <div class="rain">
+                <i class="fas fa-tint"></i>
+                <p id="rain">perc - 0%</p>
+              </div>
+            </div>
+          </div>
+          <div class="location">
+            <div class="location-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="location-text">
+              <p id="location">location</p>
+            </div>
+          </div>
+        </div>
+        <div class="main">
+          <nav>
+            <ul class="options">
+              <button class="hourly">today</button>
+              <button class="week active">week</button>
+            </ul>
+            <ul class="options units">
+              <button class="celcius active">°C</button>
+              <button class="fahrenheit">°F</button>
+            </ul>
+          </nav>
+          <div class="cards" id="weather-cards"></div>
+          <div class="highlights">
+            <h2 class="heading">today's highlights</h2>
+            <div class="cards">
+              <div class="card2">
+                <h4 class="card-heading">UV Index</h4>
+                <div class="content">
+                  <p class="uv-index">0</p>
+                  <p class="uv-text">Low</p>
+                </div>
+              </div>
+              <div class="card2">
+                <h4 class="card-heading">Wind Status</h4>
+                <div class="content">
+                  <p class="wind-speed">0</p>
+                  <p>km/h</p>
+                </div>
+              </div>
+              <div class="card2">
+                <h4 class="card-heading">Sunrise & Sunset</h4>
+                <div class="content">
+                  <p class="sun-rise">0</p>
+                  <p class="sun-set">0</p>
+                </div>
+              </div>
+              <div class="card2">
+                <h4 class="card-heading">Humidity</h4>
+                <div class="content">
+                  <p class="humidity">0</p>
+                  <p class="humidity-status">Normal</p>
+                </div>
+              </div>
+              <div class="card2">
+                <h4 class="card-heading">Visibility</h4>
+                <div class="content">
+                  <p class="visibilty">0</p>
+                  <p class="visibilty-status">Normal</p>
+                </div>
+              </div>
+              <div class="card2">
+                <h4 class="card-heading">Air Quality</h4>
+                <div class="content">
+                  <p class="air-quality">0</p>
+                  <p class="air-quality-status">Normal</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="credits">Weather Prediction App by <span class="credit-name">Prajwal</span></p>
+        </div>
+      </div>
+    <script src="Main-Project-JavaScript.js"></script>
+</body>
+</html>
